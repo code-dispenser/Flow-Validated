@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	 <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\assets\FlowValidatedKey.snk</AssemblyOriginatorKeyFile>
+    <Title>Flow.Validated</Title>
+    <PackageIcon>icon-64.png</PackageIcon>
+    <Copyright>Copyright (c) 2025 Paul Kent.</Copyright>
+    <Description>Small extensions library to transform a Validated&lt;T&gt; into a Flow&lt;T&gt;</Description>
+	<Version>1.0.0</Version>
+	<AssemblyVersion>1.0.0</AssemblyVersion>
+	<FileVersion>1.0.0</FileVersion>
+	<InformationalVersion>1.0.0</InformationalVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	<Deterministic>true</Deterministic>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<PackageLicenseFile>License.txt</PackageLicenseFile>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<Company>Paul Kent</Company>
+	<PackageTags>Flow; Flow.Core; Validated; Validated.Core;</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Core" Version="3.2.0" />
+    <PackageReference Include="Validated.Core" Version="1.0.6" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Flow.Validated.Tests.Unit" key="0024000004800000940000000602000000240000525341310004000001000100d98b8fccbaa9c1dc43b368cd0151509b31a645a3e20987945f7d625464a150f0a9e44343b14312c18928332ffb2148276160a94dbb04125368a6258d0aa0bbf199f3e23941a6ed86f5b73a2c42fcb66a6a9cce52cdcab17fc0803d503c6f3b25153b5ee602d7a7c0ddc962adb231b776c0ceefc65e2c0b15e76f42c181a1b2b5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\assets\icon-64.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\License.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
