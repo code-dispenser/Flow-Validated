@@ -1,4 +1,4 @@
-[![.NET](https://github.com/code-dispenser/Flow-Validated/actions/workflows/buildandtest.yml/badge.svg?branch=main)](https://github.com/code-dispenser/Flow-Validated/actions/workflows/buildandtest.yml) [![Coverage Status](https://coveralls.io/repos/github/code-dispenser/Flow-Validated/badge.svg?branch=main)](https://coveralls.io/github/code-dispenser/Flow?branch=main) 
+[![.NET](https://github.com/code-dispenser/Flow-Validated/actions/workflows/dotnet.yml/badge.svg)](https://github.com/code-dispenser/Flow-Validated/actions/workflows/dotnet.yml) [![Coverage Status](https://coveralls.io/repos/github/code-dispenser/Flow-Validated/badge.svg?branch=main)](https://coveralls.io/github/code-dispenser/Flow?branch=main) 
 
 
 <h1>
