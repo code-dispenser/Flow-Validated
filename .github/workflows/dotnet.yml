@@ -33,4 +33,4 @@ jobs:
        targetdir: CoverageResults
        reporttypes: Html;lcov
     - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.3.
+      uses: coverallsapp/github-action@v2.3.6
