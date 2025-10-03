@@ -14,7 +14,7 @@
 	<AssemblyVersion>1.0.0</AssemblyVersion>
 	<FileVersion>1.0.0</FileVersion>
 	<InformationalVersion>1.0.0</InformationalVersion>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	<Deterministic>true</Deterministic>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -22,6 +22,25 @@
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<Company>Paul Kent</Company>
 	<PackageTags>Flow; Flow.Core; Validated; Validated.Core;</PackageTags>
+	<PackageProjectUrl>https://github.com/code-dispenser/Flow-Validated</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/code-dispenser/Flow-Validated</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0|AnyCPU'">
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,6 +58,10 @@
 	    <PackagePath>\</PackagePath>
 	  </None>
 	  <None Include="..\..\License.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\README.md">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>

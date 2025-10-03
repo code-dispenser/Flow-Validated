@@ -4,6 +4,7 @@ using Flow.Validated.Tests.Unit.Common.Models;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Validated.Core.Common.Constants;
+using Validated.Core.Extensions;
 using Validated.Core.Types;
 using Xunit.Sdk;
 

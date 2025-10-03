@@ -3,9 +3,9 @@ using Validated.Core.Common.Constants;
 using Validated.Core.Types;
 using FlowModels = Flow.Core.Common.Models;
 /*
-    * Namespace where Flow extensions are so they merge. 
+    * Namespace where Validated extensions are so they merge. 
 */
-namespace Flow.Core.Areas.Extensions;
+namespace Validated.Core.Extensions;
 
 /// <summary>
 /// Extension methods for converting a Validated to a Flow.
@@ -30,11 +30,11 @@ public static class ToFlowExtensions
                                                                     $"Validation failed with {validated.Failures.Count} error(s)", null, 0, !hasError));
     }
 
-    // <summary>
+    /// <summary>
     /// Converts a Task of Validated to a Task of Flow.
     /// </summary>
     /// <typeparam name="T">The type of the validated value.</typeparam>
-    /// <param name="validatedTask">The task returning a validated instance.</param>
+    /// <param name="validated">The task returning a validated instance.</param>
     /// <returns>A task returning a Flow instance.</returns>
     public static async Task<Flow<T>> ToFlow<T>(this Task<Validated<T>> validated) where T : notnull
 
