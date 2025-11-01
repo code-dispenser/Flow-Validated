@@ -10,10 +10,10 @@
     <PackageIcon>icon-64.png</PackageIcon>
     <Copyright>Copyright (c) 2025 Paul Kent.</Copyright>
     <Description>Small extensions library to transform a Validated&lt;T&gt; into a Flow&lt;T&gt;</Description>
-	<Version>1.0.1</Version>
-	<AssemblyVersion>1.0.1</AssemblyVersion>
-	<FileVersion>1.0.1</FileVersion>
-	<InformationalVersion>1.0.1</InformationalVersion>
+	<Version>1.0.2</Version>
+	<AssemblyVersion>1.0.2</AssemblyVersion>
+	<FileVersion>1.0.2</FileVersion>
+	<InformationalVersion>1.0.2</InformationalVersion>
 	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	<Deterministic>true</Deterministic>
@@ -25,7 +25,7 @@
 	<PackageProjectUrl>https://github.com/code-dispenser/Flow-Validated</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/code-dispenser/Flow-Validated</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Updated to reference version 1.1.1 of Validated.Core</PackageReleaseNotes>
+	<PackageReleaseNotes>Updated to reference the version 1.2.0 of Validated.Core</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
@@ -46,7 +46,7 @@
 
   <ItemGroup>
     <PackageReference Include="Flow.Core" Version="3.2.0" />
-    <PackageReference Include="Validated.Core" Version="1.1.1" />
+    <PackageReference Include="Validated.Core" Version="1.2.0" />
   </ItemGroup>
 
 	<ItemGroup>
