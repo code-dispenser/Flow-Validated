@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	 <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	 <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SignAssembly>True</SignAssembly>
@@ -10,9 +10,9 @@
     <PackageIcon>icon-64.png</PackageIcon>
     <Copyright>Copyright (c) 2025 Paul Kent.</Copyright>
     <Description>Small extensions library to transform a Validated&lt;T&gt; into a Flow&lt;T&gt;</Description>
-	<Version>1.0.2</Version>
-	<AssemblyVersion>1.0.2</AssemblyVersion>
-	<FileVersion>1.0.2</FileVersion>
+	<Version>1.0.3</Version>
+	<AssemblyVersion>1.0.3</AssemblyVersion>
+	<FileVersion>1.0.3</FileVersion>
 	<InformationalVersion>1.0.2</InformationalVersion>
 	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
@@ -25,28 +25,19 @@
 	<PackageProjectUrl>https://github.com/code-dispenser/Flow-Validated</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/code-dispenser/Flow-Validated</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Updated to reference the version 1.2.0 of Validated.Core</PackageReleaseNotes>
+	<PackageReleaseNotes>Added support for .NET 10</PackageReleaseNotes>
   </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flow.Core" Version="3.2.0" />
-    <PackageReference Include="Validated.Core" Version="1.2.0" />
+    <PackageReference Include="Flow.Core" Version="3.2.1" />
+    <PackageReference Include="Validated.Core" Version="1.2.1" />
   </ItemGroup>
 
 	<ItemGroup>
